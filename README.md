@@ -6,3 +6,4 @@ Group Members: Sujithkumar Manoharan (directory id: sujith26), Dave Jose (direct
             YouTube Video Link: 
             APIs: SpotifyAPI (https://developer.spotify.com/documentation/web-api)
             Contact Email:  ryarlag1@terpmail.umd.edu
+            Hosted on: https://soundstream-kxkf.onrender.com
