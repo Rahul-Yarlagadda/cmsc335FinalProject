@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Change Favorite Artist</title>
+    <style>
+		body {
+		 background-image: url("/images/Headphones1.png");
+		 background-size: cover;
+		 background-position: center;
+		 background-repeat: no-repeat;
+		 height:100vh;
+		 width:100vw;
+		 position: relative;
+		}
+		#textbox {  
+		 margin: auto;
+		 font-size: 22px; 
+		 text-align: center; 
+		 background-color: rgba(255, 255, 255, 0.682); 
+		 border: solid navy; 
+		 margin-left: 22%;
+		 margin-right:22%;
+		} 
+		img {
+		 height:10rem;
+		 width:10rem;
+		}
+		input[type=submit] {
+        background: purple;
+        color: white;
+        border-radius: 2rem;
+        height: 3rem;
+        width: 10rem;
+		}
+		input[type=submit]:hover {
+			background: blue;
+		}
+		input[type=reset] {
+        background: purple;
+        color: white;
+        border-radius: 2rem;
+        height: 3rem;
+        width: 10rem;
+		}
+		input[type=reset]:hover {
+			background: blue;
+		}
+	 </style>
+</head>
+
+<body>
+    <div id = "textbox">
+	<h1>Add songs</h1>
+	<form action="/change" method="post">
+
+		<fieldset>
+			<label>Username: <input type="text" name="name" required></label>
+			<label>New Favorite Artist: <input type="text" name="artist" required></label>
+		</fieldset>
+        <br>
+		<input type="reset">
+		<input type="submit" onclick="data" value="Submit">
+
+	</form>
+
+	<%- message %>
+
+	<hr>
+
+    <a href="/">HOME</a>
+</div>
+
+<script>
+	window.onsubmit = () => {
+		return window.confirm("Are you sure you want to make this change?");
+	}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Profile create</title>
+	<style>
+		body {
+		 background-image: url("/images/Headphones1.png");
+		 background-size: cover;
+		 background-position: center;
+		 background-repeat: no-repeat;
+		 height:100vh;
+         width:100vw;
+         position: relative;
+		}
+		input[type=submit] {
+        background: purple;
+        color: white;
+        border-radius: 2rem;
+        height: 3rem;
+        width: 10rem;
+		}
+		input[type=submit]:hover {
+			background: blue;
+		}
+		input[type=reset] {
+        background: purple;
+        color: white;
+        border-radius: 2rem;
+        height: 3rem;
+        width: 10rem;
+		}
+		input[type=reset]:hover {
+			background: blue;
+		}
+		#textbox {  
+		
+		 padding-top: 5%;
+		 padding-bottom:-5%;
+		 width: 50rem;
+		 height: 30rem; 
+		 margin: auto;
+		 text-align: center; 
+		 background-color: rgba(255, 255, 255, 0.682); 
+		 border: solid navy; 
+		 margin-left: 22%;
+		 margin-right:22%;
+		 margin-top: 5%;
+		} 
+		#imgwithin{
+		 height:20rem;
+		 width:30rem;
+		}
+		div {
+			padding-top: 5%;
+		}
+		h1 {
+			font-size: 50px;
+		}
+	 </style>
+</head>
+
+<body>
+	<div id ="textbox">
+	<h1>Create Account</h1>
+	<form action="/accountCreated" method="post">
+		<div>
+			<fieldset>
+				<label><strong>Username: </strong><input type="text" name="name" required></label>
+				<label><strong>Favorite Artist: </strong><input type="text" name="artist" required></label>
+				<label><strong>Favorite Genre: </strong></label>
+				<select name="genre">
+					<option value="Pop">Pop</option>
+					<option value="Rap/Hip-Hop">Rap/Hip-Hop</option>
+					<option value="Rock">Rock</option>
+					<option value="Indie">Indie</option>
+					<option value="Classical">Classical</option>
+					<option value="Country">Country</option>
+					<option value="Jazz">Jazz</option>
+					<option value="K-pop">K-pop</option>
+					<option value="R&B">R&B</option>
+					<option value="Other">Other</option>
+				</select>
+			</fieldset>
+		</div>
+        <br>
+		<input type="reset">
+		<input type="submit" value="Submit">
+
+	</form>
+
+	<hr>
+
+    <a href="/">HOME</a>
+</div>
+
+	<script>
+		window.onsubmit = () => {
+			return window.confirm("Are you sure you want to create your account? \n You will not be able to change your information once submitted.");
+		}
+	
+	</script>
+</body>
+
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       body {
+        color: Navy;
+        background-image: url("/images/Headphones1.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height:100vh;
+        width:100vw;
+        position: relative;
+       }
+       #textbox {  
+        margin: auto;
+        font-size: 22px; 
+        text-align: center; 
+        background-color: rgba(255, 255, 255, 0.682); 
+        border: solid navy; 
+        margin-left: 22%;
+        margin-right:22%;
+       } 
+       #imgwithin{
+        height:20rem;
+        width:30rem;
+       }
+       button {
+        background: purple;
+        color: white;
+        border-radius: 2rem;
+        height: 3rem;
+        width: 10rem;
+       }
+       button:hover {
+        background: blue;
+       }
+       #leftbox { 
+        border:blue;
+       }
+       #rightbox {
+        border: blue;
+       }
+       #container {
+            display: flex; /* Change to block */
+            flex-direction: row; /* row is the default, try column. row-reverse */
+            align-items: center; /* try center, flex-start, flex-end */
+            justify-content: space-around; /* try space-between, space-evenly */
+            padding-left: 5rem;
+        }
+        #header {
+            border: black;
+            width: 53.5rem;
+            height: 5rem;
+            background-color: navy;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="textbox">
+        <div id="header">
+        <h1>Welcome to SoundStream</h1>
+        </div>
+        <br>
+        <img src ="/images/Headphones2.png" alt="music" id="imgwithin">
+        <br><br>
+        <a href="/lookup"><button>Look Up Artist</button></a>
+        <a href="/create"><button>Create SoundStream Profile</button></a>
+        <a href="/addSongs"><button>Add a Song</button></a><br><br>
+        <a href="/change"><button>Change Favorite Artist</button></a>
+        <a href="/portal"><button>View Profile</button></a>
+        <br>
+        <br>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Lookup Artist</title>
+	<style>
+		body {
+		 background-image: url("/images/Headphones1.png");
+		 background-size: cover;
+		 background-position: center;
+		 background-repeat: no-repeat;
+		 height:100vh;
+         width:100vw;
+         position: relative;
+		}
+		#textbox {  
+		
+		 padding-top: 5%;
+		 padding-bottom:-5%;
+		 width: 50rem;
+		 height: 30rem; 
+		 margin: auto;
+		 text-align: center; 
+		 background-color: rgba(255, 255, 255, 0.682); 
+		 border: solid navy; 
+		 margin-left: 22%;
+		 margin-right:22%;
+		 margin-top: 5%;
+		} 
+		#imgwithin{
+		 height:20rem;
+		 width:30rem;
+		}
+		div {
+			padding-top: 5%;
+		}
+		h1 {
+			font-size: 50px;
+		}
+		input[type=submit] {
+        background: purple;
+        color: white;
+        border-radius: 2rem;
+        height: 3rem;
+        width: 10rem;
+		}
+		input[type=submit]:hover {
+			background: blue;
+		}
+		input[type=reset] {
+        background: purple;
+        color: white;
+        border-radius: 2rem;
+        height: 3rem;
+        width: 10rem;
+		}
+		input[type=reset]:hover {
+			background: blue;
+		}
+		img {
+		 height:5rem;
+		 width:5rem;
+		}
+	 </style>
+</head>
+
+<body>
+	<div id ="textbox">
+	<h1>Enter username for profile Search</h1>
+	<form action="/profile" method="post">
+		<div>
+			<fieldset>
+				<label><strong>Username: </strong><input type="text" name="name" required></label>
+			</fieldset>
+		</div>
+        <br>
+		<input type="reset">
+		<input type="submit" value="Submit">
+
+	</form>
+	<hr>
+
+    <%-message %>
+
+    <a href="/">HOME</a>
+</div>
+
+</body>
+
+
+</html>
